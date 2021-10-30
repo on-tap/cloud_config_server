@@ -1,0 +1,14 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name:server_config
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/on-tap/cloud_config
+          default-label: main
+        bootstrap: false
